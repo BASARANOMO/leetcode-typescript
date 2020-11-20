@@ -13,3 +13,26 @@ function mySqrt(x: number): number {
     }
     return Math.floor(resPrev);
 };
+
+/** Binary search
+ * Time complexity: O(log x)
+ * Space complexity: O(1)
+ */
+function mySqrtBinarySearch(x: number): number {
+    if (x == 0) {
+        return 0;
+    }
+    let left: number = 0;
+    let right: number = x;  // integer
+    let ans: number;
+    while (left <= right) {
+        let mid: number = Math.floor(left + (right - left)/2);  // integer
+        if (mid * mid <= x) {
+            ans = mid;
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+    return ans;
+};
