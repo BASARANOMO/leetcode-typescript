@@ -1,3 +1,4 @@
+/** Newton's method */
 function mySqrt(x: number): number {
     let resPrev: number = 1;
     let epsilon: number = 1;
