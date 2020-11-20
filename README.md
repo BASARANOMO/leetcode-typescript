@@ -2,4 +2,4 @@
 
 Provide all my solutions and explanations for LeetCode coding problems.
 
-![](https://img.shields.io/badge/Language-TypeScript-blueviolet)
+![](https://github.com/BASARANOMO/leetcode-typescript/blob/main/Language-TypeScript-blueviolet.svg)
