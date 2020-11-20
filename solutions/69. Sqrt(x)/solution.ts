@@ -1,4 +1,7 @@
-/** Newton's method */
+/** Newton's method
+ * Time complexity: O(log x)
+ * Space complexity: O(1)
+ */
 function mySqrt(x: number): number {
     let resPrev: number = 1;
     let epsilon: number = 1;
