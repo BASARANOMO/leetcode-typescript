@@ -1,5 +1,9 @@
 "use strict";
 // in place
+/** Newton's method
+ * Time complexity: O(mn)
+ * Space complexity: O(1)
+ */
 function minPathSumInPlace(grid) {
     for (var i = 1; i < grid[0].length; i++) {
         grid[0][i] += grid[0][i - 1];

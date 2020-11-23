@@ -1,4 +1,8 @@
 "use strict";
+/** Newton's method
+ * Time complexity: O(mn)
+ * Space complexity: O(mn)
+ */
 function minPathSum(grid) {
     var dp = [[]];
     dp[0].push(grid[0][0]);
