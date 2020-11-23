@@ -17,7 +17,7 @@ function levelOrder(root: TreeNode | null): number[][] {
     }
     let lev: TreeNode[] = [root];
     let res: number[][] = [];
-    let tempLev: TreeNode[] = [];
+    let tempLev: (TreeNode | null)[] = [];
     let tempVal: number[] = [];
     while (lev.length != 0) {
         tempLev = [];
