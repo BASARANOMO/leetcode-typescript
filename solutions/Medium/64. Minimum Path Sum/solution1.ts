@@ -6,9 +6,9 @@ function minPathSum(grid: number[][]): number {
         dp[0].push(dp[0][i-1] + grid[0][i]);
     }
     
-    for (let j=1; j<grid.length; j++) {
+    for (let i=1; i<grid.length; i++) {
         dp.push([]);
-        dp[j].push(dp[j-1][0] + grid[j][0]);
+        dp[i].push(dp[i-1][0] + grid[i][0]);
     }
     
     for (let i=1; i<grid.length; i++) {
