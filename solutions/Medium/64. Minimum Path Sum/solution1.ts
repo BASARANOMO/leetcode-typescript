@@ -1,3 +1,8 @@
+/** Newton's method
+ * Time complexity: O(mn)
+ * Space complexity: O(mn)
+ */
+
 function minPathSum(grid: number[][]): number {
     let dp: number[][] = [[]];
     dp[0].push(grid[0][0]);
