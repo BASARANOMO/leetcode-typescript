@@ -45,3 +45,15 @@ n == nums.length
 1 <= n <= 300
 nums[i] is 0, 1, or 2.
 ```
+
+## Explanation for the solution No.3 (in Chinese)
+
+用三个变量记录red,white,blue的下标位置。起始下标都为-1
+
+如果A[i] == 0 ，插入red对white blue有影响，blue先整体向后移动一位，white再整体向后移动一位，如果不移动，前面插入的数据就会覆盖已有的。
+
+如果A[i] == 1，插入white对blue有影响，blue整体向后移动一位。
+
+A[i] == 2，直接插入blue
+
+(Ref: SJF0115 of LeetCode)
